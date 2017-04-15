@@ -1,8 +1,5 @@
+
 body {
-	margin: 0;
-	padding: 0;
-}
-.site-wrapper {
 	width: 1200px;
 	margin: 0 auto;
 	box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
@@ -19,7 +16,48 @@ body {
 }
 .filter-block {
 	width: 100%;
-	height: 218px;
 	color: #fff;
 	background-image: url("https://dummyimage.com/1200x218/000/fff.jpg&text=+++++++++++++++++++++++++bg-image");
 }
+/* двойной фильтр */
+
+.range-controls{
+    position:relative;
+    height:80px;
+    margin-bottom:15px;
+    padding:0 30px;
+    width: 325px;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+
+.scale{
+    margin-top:39px;
+    height:2px;
+    background:#8c8080;
+}
+.bar {
+    height:2px;
+    background:#fff;
+}
+
+
+.toggle{
+    position:absolute;
+    top:30px;
+    left:30px;
+    width:4px;
+    height:4px;
+    border:8px solid white;
+    background:#ababab;
+    cursor:pointer;
+    border-radius:50%;
+}
+.min-toggle{
+    left:70px;
+}
+.max-toggle{
+    left:165px;
+}
+/* ---------------*/
