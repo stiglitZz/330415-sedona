@@ -124,7 +124,7 @@ a {
 	background-image: url("../img/filter_background.jpg");
 }
 .btn-show {
-	font-family: 'PT Sans';
+	font-family: 'PT Sans' , 'Roboto Condensed' , sans-serif;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 400;
