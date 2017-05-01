@@ -14,13 +14,16 @@
 
 
 
-        <nav class="main-navigation">
-            <ul>
+        <nav class="main-nav clearfix">
+            <ul class="main-nav-left">
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и видео</a></li>
+            </ul>
+            <ul class="main-nav-right">
                 <li><a href="#">Карта штата</a></li>
                 <li><a>Гостиницы</a></li>
             </ul>
+            
         </nav>
 
         <div class="site-logo site-logo-hotels">
@@ -35,9 +38,9 @@
 
     <main>
 
-        <section class="filters-block">
+        <section class="filters-block-wrapper">
 
-            <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="filter-form clearfix" action="https://echo.htmlacademy.ru" method="post">
 
                 <fieldset class="filter-block">
 
@@ -86,7 +89,7 @@
                             <div class="toggle max-toggle"></div>
 
                         </div>
-
+                        <input type="submit" class="btn-show" name="" value="показать">
 
 
 
@@ -95,14 +98,14 @@
 
                 </fieldset>
 
-                <input type="submit" class="btn-show" name="" value="показать">
+                
 
             </form>
         </section>
 
         <section class="search-content">
 
-            <div class="info-search">
+            <div class="info-search clearfix">
 
                 <div class="total-found">
                     <div class="found">Найдено: <span>3</span></div>
@@ -201,7 +204,7 @@
 
     </main>
 
-    <footer class="footer-hotels">
+    <footer class="footer-hotels clearfix">
 
         <section class="visitsedona"><a href="#">#visitsedona</a></section>
 
