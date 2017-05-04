@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>TrainingSEDONA-HOTELS</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
             </ul>
             <ul class="main-nav-right">
                 <li><a href="#">Карта штата</a></li>
-                <li><a>Гостиницы</a></li>
+                <li><a class="active-page">Гостиницы</a></li>
             </ul>
             
         </nav>
@@ -44,9 +45,9 @@
 
                 <fieldset class="filter-block">
 
-                    <h4 class="title-filter">инфраструктура:</h4>
+                    <legend class="title-filter">инфраструктура:</legend>
 
-                    <input type="checkbox" name="structure" id="pool" value="pool">
+                    <input type="checkbox" name="structure" id="pool" value="pool" checked>
                     <label for="pool">бассейн</label>
                     <input type="checkbox" name="structure" id="parking" value="parking">
                     <label for="parking">парковка</label>
@@ -58,13 +59,13 @@
 
                 <fieldset class="filter-block">
 
-                    <h4 class="title-housing">тип жилья:</h4>
+                    <legend class="title-housing">тип жилья:</legend>
 
-                    <input type="checkbox" name="housing" id="hotel" value="hotel">
+                    <input type="checkbox" name="housing" id="hotel" value="hotel" checked>
                     <label for="hotel">Гостиница</label>
-                    <input type="checkbox" name="housing" id="motel" value="motel">
+                    <input type="checkbox" name="housing" id="motel" value="motel" checked>
                     <label for="motel">Мотель</label>
-                    <input type="checkbox" name="housing" id="aparts" value="apartments">
+                    <input type="checkbox" name="housing" id="aparts" value="apartments" checked>
                     <label for="aparts">Апартаменты</label>
 
 
@@ -72,24 +73,24 @@
 
                 <fieldset class="cost-per-day">
 
-                    <h4 class="title-price">стоимость в сутки (р):</h4>
+                    <legend class="title-price">стоимость в сутки (р):</legend>
                     <div class="price-form">
 
                         <div class="price-range">
-                            <label>от<input type="number" name="price" value="0"></label>
-                            <label>до<input type="number" name="price" value="3000"></label>
+                            <label>от<input type="text" name="price" value="0"></label>
+                            <label>до<input type="text" name="price" value="3000"></label>
                         </div>
 
 
                         <div class="range-controls">
                             <div class="scale">
-                                <div style="margin-left: 50px; width: 100px;" class="bar"></div>
+                                <div style="width: 80%;" class="bar"></div>
                             </div>
                             <div class="toggle min-toggle"></div>
                             <div class="toggle max-toggle"></div>
 
                         </div>
-                        <input type="submit" class="btn-show" name="" value="показать">
+                        <button class="btn-show" type="submit">показать</button>
 
 
 
@@ -204,15 +205,15 @@
 
     </main>
 
-    <footer class="footer-hotels clearfix">
+    <footer class="footer-hotels">
 
         <section class="visitsedona"><a href="#">#visitsedona</a></section>
 
         <section class="footer-social">
             <ul>
-                <li><a class="social-btn twt-btn" href="#">twitter</a></li>
-                <li><a class="social-btn fb-btn" href="#">facebook</a></li>
-                <li><a class="social-btn yt-btn" href="#">youtube</a></li>
+                <li><a class="link link-twt" href="#"><a class="social-btn twt-btn" href="#">twitter</a></a></li>
+                <li><a class="link link-fb" href="#"><a class="social-btn fb-btn" href="#">facebook</a></a></li>
+                <li><a class="link link-yt" href="#"><a class="social-btn yt-btn" href="#">youtube</a></a></li>
             </ul>
         </section>
 

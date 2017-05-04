@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>TrainingSEDONA</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -138,6 +139,50 @@
             <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 
             <a class="btn-hotels" href="#">поиск гостиницы в седоне</a>
+            
+            <!-- Форма поиска -->
+            <div class="hotel-search">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                
+                <div class="input-wrapper">
+                  <label for="date-in">Дата заезда:</label>
+                  <input type="text" name="date-in" id="date-in" value="24 апреля 2017">
+                  <a class="icon icon-calendar" href="">calendar</a>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="date-out">Дата выезда:</label>
+                  <input type="text" name="date-out" id="date-out" value="4 июля 2017">
+                  <a class="icon icon-calendar" href="">calendar</a>
+                </div>
+
+                <div class="input-wrapper clearfix">
+                  
+                  <div class="adult-block clearfix">
+                    <label for="adult-count">Взрослые:</label>
+                    <div class="input-area">
+                      <a class="form-btn btn-minus" href="">–</a>
+                      <input type="text" name="adult-count" id="adult-count" value="2">
+                      <a class="form-btn btn-plus" href="">+</a>
+                    </div>
+                  </div>
+
+                  <div class="children-block clearfix">
+                    <label for="children-count">Дети:</label>
+                    <div class="input-area">
+                      <a class="form-btn btn-minus" href="">–</a>
+                      <input type="text" name="children-count" id="children-count" value="0">
+                      <a class="form-btn btn-plus" href="">+</a>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                <input class="btn-search" type="submit" name="hotel-search" value="Найти">
+
+    
+              </form>
+            </div>
         </section>
 
         <section class="map-index">
@@ -146,14 +191,14 @@
 
     </main>
 
-    <footer class="footer-index clearfix">
+    <footer class="footer-index">
         <section class="visitsedona"><a href="#">#visitsedona</a></section>
 
         <section class="footer-social">
             <ul>
-                <li><a class="social-btn twt-btn" href="#">twitter</a></li>
-                <li><a class="social-btn fb-btn" href="#">facebook</a></li>
-                <li><a class="social-btn yt-btn" href="#">youtube</a></li>
+                <li><a class="link link-twt" href="#"><a class="social-btn twt-btn" href="#">twitter</a></a></li>
+                <li><a class="link link-fb" href="#"><a class="social-btn fb-btn" href="#">facebook</a></a></li>
+                <li><a class="link link-yt" href="#"><a class="social-btn yt-btn" href="#">youtube</a></a></li>
             </ul>
         </section>
 
