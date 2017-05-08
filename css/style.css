@@ -13,13 +13,13 @@
     src: local('PT Sans Bold'), local('PTSans-Bold');
 }
 body {
+    position: relative;
     font-family: 'PT Sans', 'Tahoma', sans-serif;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     text-transform: uppercase;
     max-width: 1200px;
-
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
@@ -42,6 +42,9 @@ a {
     width: 100%;
     padding-bottom: 13px;
     /*box-shadow: 0 0px 8px rgba(0, 1, 1, 0.2);*/
+}
+.main-header-hotels {
+    position: relative;
 }
 .main-header {
     max-width: 1200px;
@@ -75,7 +78,7 @@ a {
     margin: 0;
     margin-top: 14px;
     font-size: 0;
-    width: 40%;
+    width: 46.1%;
 }
 .main-nav li {
     display: inline-block;
@@ -108,6 +111,12 @@ a {
 .main-nav-right li {
     text-align: right; 
 }
+/*.main-nav-left li:nth-child(2) a {
+    padding-left: 29px;
+}
+.main-nav-right li:first-child a {
+    padding-right: 34px;
+}*/
 
 .welcome-block-text h1,
 .visitsedona a,
@@ -120,7 +129,8 @@ a {
     text-align: center;
     margin: 0 auto;
     padding: 0 20px;
-    margin-bottom: 27px;
+    margin-top: 4px;
+    margin-bottom: 26px;
 }
 .welcome-block-text p {
     line-height: 26px;
@@ -132,23 +142,23 @@ a {
     width: 100%;
     height: 564px;
     overflow: hidden;
-    margin-bottom: 4px;
 }
 .welcome-block-text-wrapper {
     padding-top: 56px;
     padding-bottom: 51px;
+
 }
 .welcome-block-text {
     max-width: 570px;
     margin: 0 auto;
     padding: 0 20px;
 }
-.main-for-index {
+main {
     position: relative;
 }
 /*marker*/
 
-/* * { 
+/** { 
       outline: 1px dashed #f0f;
   } */
 
@@ -260,10 +270,16 @@ a {
 }
 .features-block .feature-item:nth-child(2) h3 {
 }
-
+.features-block .feature-item h3 {
+    width: 30%;
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: 25px;
+}
 .features-block .feature-item p {
     width: 300px;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 .features-info-block {
     background-color: #eee;
@@ -271,9 +287,10 @@ a {
 .features-info-block .feature-info-item h3 {
     margin: 0 auto;
     margin-bottom: 25px;
-    width: 160px;
+    width: 120px;
     text-align: center;
 }
+
 .features-info-block .feature-info-item p:first-of-type {
     margin: 0 auto;
     margin-bottom: 20px;
@@ -284,13 +301,14 @@ a {
 
 .features-info-block .feature-info-item p:last-of-type {
     margin: 0 auto;
+    margin-bottom: 10px;
     text-align: center;
     width: 260px;
 }
 .features-info-block .feature-info-item {
     width: 33.3%;
     padding-top: 47px;
-    padding-bottom: 59px;
+    padding-bottom: 49px;
 }
 .features-info-block .feature-info-item:first-child {
     float: left;
@@ -339,33 +357,31 @@ a {
 }
 .hotel-search form {
 }
-.hotel-search input {
+.hotel-search input:not(.btn-search) {
     margin: 0;
     padding: 0;
-    padding-left: 15px;
+    padding-left: 14px;
     border: none;
     outline: none;
-    background-color: #f2f2f2;
+    background-color: #e5e5e5;
     font-size: 14px;
+    line-height: 26px;
     font-weight: inherit;
     text-transform: inherit;
-    width: 331px;
+    border: 2px solid #e5e5e5;
+    width: 327px;
     height: 38px;
 }
+
 .hotel-search input:hover:not(.btn-search) {
     background-color: #ebebeb;
 }
 .hotel-search input:focus:not(.btn-search) {
     background-color: #fff;
-    border: 2px solid #e5e5e5;
-    width: 327px;
-    height: 34px;
 }
 .hotel-search .input-area input:focus {
     background-color: #fff;
-    border: 2px solid #e5e5e5;
-    width: 95px;
-    height: 34px;    
+
 }
 .hotel-search .icon {
     position: absolute;
@@ -391,11 +407,10 @@ a {
 }
 .hotel-search .input-wrapper {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
-.hotel-search .input-wrapper:nth-of-type(2) {
-}
-.hotel-search label {
+
+.hotel-search .input-wrapper:first-of-type label {
     margin-right: 16px;
 }
 .hotel-search .input-wrapper:nth-of-type(2) label {
@@ -408,7 +423,7 @@ a {
     float: right;
 }
 .hotel-search .input-area input {
-    width: 99px;
+    width: 110px;
     padding: 0;
     text-align: center;
 }
@@ -424,6 +439,9 @@ a {
 .hotel-search .children-block {
     width: 50%;
 }
+.hotel-search .adult-block .input-area {
+    margin-right: 5px;
+}
 .hotel-search .children-block {
 }
 .hotel-search .adult-block label,
@@ -437,10 +455,12 @@ a {
 .hotel-search .btn-search {
     width: 100%;
     height: 58px;
+    text-transform: uppercase;
     line-height: 58px;
     color: #fff;
     font-size: 21px;
     padding: 0;
+    border: none;
     background-color: #81b3d2;
     cursor: pointer;
 }
@@ -469,13 +489,15 @@ a {
     left: 27%;
 }
 .hotel-search .adult-block .btn-plus {
-    left: 42%;
+    top: 20.8%;
+    left: 43.6%;
 }
 .hotel-search .children-block .btn-minus {
     left: 78%;
 }
 .hotel-search .children-block .btn-plus {
-    left: 92%;
+    top: 20.8%;
+    left: 95%;
 }
 .footer-hotels {
     width: 1200px;
@@ -484,27 +506,27 @@ a {
 }
 .footer-index {
     position: absolute;
-    top: 2642px;
+    bottom: 0;
     z-index: 3;
     background-color: #fff;
     opacity: 0.9;
     width: 1200px;
-    padding-top: 37px;
-    padding-bottom: 35px;
+    /*padding-top: 33px;
+    padding-bottom: 28px;*/
+    padding: 30.5px 0;
 }
 footer { 
     font-size: 0;
 }
 footer section {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     font-size: 14px;
     width: 33.3%;
     text-align: center;
 }
 
 .visitsedona {
-    margin-top: 9px;
 }
 
 .footer-social {
@@ -578,8 +600,8 @@ footer section {
 .footer-copyright span {
     display: inline-block;
     vertical-align: top;
-    margin-top: 9px;
-    margin-right: 7px;
+    margin-top: 2px;
+    margin-right: 4px;
 }
 .footer-copyright a {
     position: relative;
@@ -658,7 +680,7 @@ footer section {
 .filters-block-wrapper .filter-form {
     padding: 0 71px;
     padding-top: 27px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
 
 }
 .filter-form input[type="checkbox"] {
@@ -678,7 +700,28 @@ footer section {
     background-image: url('../img/checkbox.png');
     background-repeat: no-repeat;
 }
-
+.filter-form input[type="checkbox"]:disabled + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background-image: url('../img/checkbox_disabled_empty.png');
+    background-repeat: no-repeat;
+}
+.filter-form input[type="checkbox"]:checked:disabled + label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 22px;
+    background-image: url('../img/checkbox_disabled.png');
+    background-repeat: no-repeat;    
+}
 .filter-form input[type="checkbox"]:checked + label::after {
     content: "";
     display: block;
@@ -725,6 +768,7 @@ fieldset {
     font-size: 0;
     width: 100px;
     margin: 0;
+    padding-top: 1px;
     padding-left: 40px;
     margin-bottom: 24px;
     cursor: pointer;
@@ -961,7 +1005,15 @@ fieldset {
     width: 60%;
 }
 .displayed-content .row-info {
-    width: 100%;
+}
+.displayed-content .row-info:first-of-type {
+    float: left;
+    width: 19%;
+    margin-right: px;
+}
+.displayed-content .row-info:last-of-type {
+    float: left;
+    width: 30%;
 }
 .displayed-content .housing-name {
     display: inline-block;
@@ -972,29 +1024,30 @@ fieldset {
 .displayed-content .housing-type,
 .displayed-content .min-price-housing {
     display: inline-block;
-    width: 15%;
     padding: 0 4px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 .displayed-content .housing-type {
 }
 .displayed-content .min-price-housing {
-    padding: 0 13px;
+    padding: 0 1px;
+}
+
+.displayed-content .details,
+.displayed-content .reservation {
+    padding: 0 17px;
 }
 .displayed-content .details {
     display: inline-block;
     text-align: center;
     background-color: #81b3d2;
-    width: 110px;
     height: 27px;
     line-height: 27px;
     margin-left: 5px;
-    margin-right: 3px;
 }
 .displayed-content .reservation {
     display: inline-block;
     text-align: center;
-    width: 142px;
     height: 27px;
     line-height: 27px;
     background-color: #766357;
